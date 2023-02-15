@@ -12,7 +12,7 @@ const SearchContainer = styled.section`
 `
 
 const Title = styled.h2`
-    color: #FFF;
+    color: #f4f4f4;
     font-size: 36px;
     text-align: center;
     width: 100%;
