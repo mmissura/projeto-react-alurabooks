@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Titulo } from "../Titulo"
+import { Title } from "../Title"
 
 const Card = styled.div`
     align-items: center;
@@ -44,13 +44,13 @@ const ImgLivro = styled.img`
     width: 150px;
 `
 
-function CardRecomenda({titulo, subtitulo, descricao, img}) {
+function CardRecomenda({title, subtitle, description, img}) {
     return (
         <Card>
             <div>
-                <Titulo tamanhoFonte="16px" cor="#EB9B00" alinhamento="left">{titulo}</Titulo>
-                <Subtitulo>{subtitulo}</Subtitulo>
-                <Descricao>{descricao}</Descricao>
+                <Title tamanhoFonte="16px" cor="#EB9B00" alinhamento="left">{title}</Title>
+                <Subtitulo>{subtitle}</Subtitulo>
+                <Descricao>{description}</Descricao>
             </div>
             <div>
                 <ImgLivro src={img}/>

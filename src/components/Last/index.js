@@ -30,7 +30,7 @@ function Last() {
             </Title>
             <NewLivrosContainer>
                 { livros.map( livro => (
-                    <img src={livro.src} alt='Livros'/>
+                    <img src={livro.src} alt='Livros' key={livro.id}/>
                 ) ) }
             </NewLivrosContainer>
             <Card

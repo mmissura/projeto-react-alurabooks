@@ -22,7 +22,7 @@ function OptionsHeader (){
    return(
     <Options>
         {textOptions.map((text) => (
-          <Option><p>{text}</p></Option>
+          <Option key={text}><p>{text}</p></Option>
           ))}
     </Options>
    )
