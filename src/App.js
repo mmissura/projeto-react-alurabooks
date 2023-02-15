@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import Search from './components/Search'
+import Last from './components/Last'
+import styled from 'styled-components'
+
+//Para estilizar o componente container sem ser necessário utilizar um arquivo CSS externo, utilizamos as cráses ``e 
+//fazemos a estilização dentro
+const AppContainer = styled.div`
+      background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
+      height: 100vh;
+      width: 100vw;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // as classes no React são declaradas com "className" 
+     <AppContainer> 
+      <Header/>
+      <Search/>
+      <Last/>
+    </AppContainer>
   );
 }
 
